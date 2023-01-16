@@ -4,7 +4,7 @@ def userinput():
     i = input("Would you like to encrypt (e) or decrypt(d)")
     if(i != "e" and i !="d"):
          print("Invalid code please re enter")
-         i = input("Would you like to encrypt (e) or decrypt(d)")
+         userinput()
     if(i == "e" ):
       m = input("What message would you like to encrypt : ")
       n = int(input("What is the shift number( enter the value between (1 to 25) : "))
